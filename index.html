@@ -8,6 +8,7 @@
     <meta name="description" content="AIRIのポートフォリオサイトです。経歴や作品等の紹介をします。">
     <meta name="keywords" content="ポートフォリオ,Webデザイン">
     <link rel="stylesheet" href="css/style.css">
+    <!--//fabicon-->
     <link rel="icon" href="images/favicon.ico">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -20,7 +21,12 @@
     <!--//MicrosoftのCDN-->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js"></script>
     <script src="js/my-jquery.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" クロスオリジン>
+    <link href="https: //fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,6 +34,7 @@
         <img class="loading__logo" src="./images/iris.svg" alt="VOOL">
     </div>
     <header id="section1">
+        <h2 class="roboto-slab">AIRI'S PORTFOLIO</h2>
         <!--<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>-->
         <nav id="menubar">
 
@@ -44,10 +51,13 @@
             </div>
 
         </nav>
+
+    </header>
+    <div id="container">
         <a href="gallery.html" data-hover-text="ギャラリー">
             <!--<div id="mainimg"><img src="images/mainimg.jpg" alt=""></div>-->
 
-            <div class="slide-items" id="js-slide">
+            <div class="slide-items roboto-slab" id="js-slide">
                 <section class="siteTitle">AIRI'S PORTFOLIO</section>
                 <img src="images/beach.JPG" alt="">
                 <img src="images/stainedglass.JPG" alt="">
@@ -55,9 +65,6 @@
             </div>
 
         </a>
-    </header>
-    <div id="container">
-
 
 
 
@@ -68,7 +75,7 @@
             <section id="section2">
 
 
-                <h2>Profile</h2>
+                <h2 class="dancing-script">Profile</h2>
                 <article>
                     <div class="pflimg"><img src="images/iris_white.svg"></div>
                     <p class="name">AIRI</p>
@@ -79,12 +86,12 @@
 
                 </article>
 
-               
- 
+
+
             </section>
             <section id="section3">
 
-                <h2>Contact</h2>
+                <h2 class="dancing-script">Contact</h2>
 
                 <article>
 

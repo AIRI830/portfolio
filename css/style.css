@@ -6,6 +6,18 @@
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
+/*// <uniquiifier > : 一意でわかりやすいクラス名を使用します。 // <weight > : 100 ～ 900 の値を使用します。*/ 
+.roboto-slab{
+	font-family: "Roboto Slab", serif;
+
+}
+.dancing-script {
+	font-family: "Dancing Script", cursive;
+}
+
+h2.dancing-script {
+	font-size: 40px;
+}
 
 :root {
 	--main-bg-color: #5d5d5d;
@@ -28,8 +40,8 @@ body {
 	background: #fefefe; /*背景色*/
 	scroll-behavior: smooth;
 	letter-spacing: 2px;
-	background: linear-gradient(to bottom right, #fbfbfb, #eae5e5);
-
+	/*background: linear-gradient(to bottom right, #fbfbfb, #eae5e5);
+*/
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
 ul {list-style-type: none;}
@@ -60,6 +72,7 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*headerブロック*/
 header {
+	height:60px;
 	text-align: center;	/*内容を中央よせ*/
 }
 
@@ -298,29 +311,31 @@ h2 {
 }
 
 #contents > section {
-	background: #fff;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 35%, rgba(247, 247, 247, 1) 100%);
-	/* 画像ファイルの指定 */
-	background-image: url("../images/bg_image.jpg");
+
 	/* 画像を常に天地左右の中央に配置 */
 	background-position: center center;
 	/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
 	background-attachment: fixed;
 	width: calc(100% - 10vmax);
 	margin: auto;
-	border-radius: 2vmax;
 	margin-bottom: 5vmax;
 	box-shadow: 5px 6px 15px -5px #c9c8c5;
 }
+#container > #contents > section {
+	background: #fff;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 35%, rgba(247, 247, 247, 1) 100%);
+	/* 画像ファイルの指定 */
+	background-image: url("../images/bg_image.jpg");
+}
 	#contents > section > article {
 
-	padding:2vmax;
+	padding:0 2vmax;
 	}
 
 
 	#contents h2 {
 		/*color: #fff;*/ /*文字色*/
-		padding: 10px 20px; /*上下、左右への余白*/
+		padding: 20px 20px 0; /*上下、左右への余白*/
 		/*background: #FFBE98;*/ /*背景色*/
 		border-radius: 10px; /*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 		text-align: center;
@@ -616,6 +631,7 @@ footer .pr {
 	min-height: 60px;
 	max-width:80px;
 	max-height:80px;
+	margin-bottom:2vmax;
 }
 	.mail img:hover {
 		opacity: .5;
