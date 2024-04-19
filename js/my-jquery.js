@@ -70,3 +70,12 @@ $(document).ready(function () {
 
 
 
+
+$(function () {
+   /* $(".gallery_block div").css("background", "#cccccc");*/
+    $(".menu-content ").click(function () {
+        $('#menu-btn-check').removeAttr("checked").prop("checked", false).change();
+        
+    });
+
+});
