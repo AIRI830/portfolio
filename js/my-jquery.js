@@ -70,7 +70,7 @@ $(document).ready(function () {
 
 
 
-
+/*メニューボタンクリック時、メニュー非表示*/
 $(function () {
    /* $(".gallery_block div").css("background", "#cccccc");*/
     $(".menu-content ").click(function () {
