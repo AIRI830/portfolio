@@ -20,7 +20,7 @@ h2.dancing-script {
 }
 
 :root {
-	--main-bg-color: #5d5d5d;
+	--main-bg-color: #393939;
 }
 
 
@@ -72,14 +72,32 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*headerブロック*/
 header {
-	height:60px;
+	height:5vmax;
 	text-align: center;	/*内容を中央よせ*/
 }
+	header > section {
+		padding-top:10px;
+		width: 100%;
+		margin: auto;
+	}
 
-#logo {
-	background: #e1e1e1;
-	height:80px;
-}
+	header>section>div {
+		background: #393939;
+		height: 3vmax;
+		width: 3vmax;
+		border-radius: 100%;
+		margin: auto;
+	}
+	header img {
+		height: 2vmax;
+		width: 2vmax;
+		padding: .5vmax;
+	}
+
+	#logo {
+		background: #e1e1e1;
+		height: 80px;
+	}
 
 /*ロゴ画像設定*/
 #logo img {
@@ -114,7 +132,7 @@ header {
 	list-style: none;
 	position: relative;
 	margin: 6vmax 5vmax;
-	border-radius: 2vmax;
+	border-radius: .5vmax;
 	width: calc(100% - 10vmax);
 	height: 50vmax;
 	overflow: hidden;
@@ -142,7 +160,7 @@ header {
 /*メニューボタン*/
 
 .menu-btn {
-	border-radius: 10px;
+	border-radius:.5vmax;
 	position: fixed;
 	top: 10px;
 	left: 10px;
@@ -305,7 +323,7 @@ header {
 ---------------------------------------------------------------------------*/
 /*コンテンツのh2タグの設定*/
 h2 {
-	margin-top: 6vmax;
+	/*margin-top: 6vmax;*/
 	clear: both;
 	margin-bottom:1vmax;
 }
@@ -393,6 +411,7 @@ h2 {
 .gallery_block {
 	display: flex;
 	justify-content: center;
+	padding:0 5vmax;
 }
 
 .gallery_block > div {
@@ -400,16 +419,18 @@ h2 {
 	flex-wrap: wrap;
 }
 	/*各ブロックごとの設定*/
-	.gallery_block > div>div {
+	.gallery_block > div > div {
 		/*border-radius: 3vmax;*/
-/*		max-width: 15vmax;
+		/*		max-width: 15vmax;
 		min-width: 15vmax;*/
 		/*width: calc(100% / 5 - 1vmax* 5);*/
+		width: 20vmax;
+		min-width: 150px;
+		max-width: 300px;
 		height: auto;
-/*		background: #FFF;*/
+		/*		background: #FFF;*/
 		margin: 1vmax;
 		flex: 1;
-		
 	}
 
 	.gallery_block img {
@@ -440,10 +461,10 @@ h2 {
 	/*フッター(ページ最下部のcopyrightのパーツ)設定
 ---------------------------------------------------------------------------*/
 footer {
-	bottom:0;
-	position:fixed;
-	width:100%;
-	background: #4b4b4b;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	background: var(--main-bg-color);
 	clear: both;
 	text-align: center; /*文字をセンタリング*/
 	/*padding: 30px 0px 10px;*/ /*上、左右、下へのボックス内の余白*/
@@ -557,19 +578,14 @@ footer .pr {
 /*プロフィール画像
 ---------------------------------------------------------------------------*/
 .pflimg {
-	width: 100px;
-	height: 100px;
-	background: #4b4b4b;
+	width: 20vmax;
+	height:auto;
 	display: block;
 	margin: 2vmax auto;
-	border-radius: 50%
+
 }
 
-	.pflimg img {
-		width: 60px;
-		height: 60px;
-		padding: 20px;
-	}
+
 
 
 	.name {
@@ -588,28 +604,46 @@ footer .pr {
 }
 
 /*テキストフェードイン*/
-.catch_copy span {
+.catch_copy>span {
 	transition: .5s;
 	opacity: 0;
 	transform: translateY(20px);
 	display: block !important;
 }
 
-	.catch_copy span:first-child {
+	.catch_copy>span:first-child {
 		animation: catch_anime 1.4s forwards .5s;
 	}
 
-	.catch_copy span:nth-child(2) {
+	.catch_copy>span:nth-child(2) {
 		animation: catch_anime 1.4s forwards 1s;
 	}
 
-	.catch_copy span:nth-child(3) {
+	.catch_copy>span:nth-child(3) {
 		animation: catch_anime 1.4s forwards 2s;
 	}
 
-	.catch_copy span:nth-child(4) {
+	.catch_copy > span:nth-child(4), .catch_copy > span:nth-child(5), .catch_copy > span:nth-child(6), .catch_copy > span:nth-child(7), .catch_copy > span:nth-child(8), .catch_copy > span:nth-child(9), .catch_copy > span:nth-child(10) {
 		animation: catch_anime 1.4s forwards 3s;
 	}
+	.catch_copy>span:nth-child(11) {
+		animation: catch_anime 1.4s forwards 4s;
+	}
+
+	.catch_copy > span:nth-child(12), .catch_copy > span:nth-child(13), .catch_copy > span:nth-child(14), .catch_copy > span:nth-child(15), .catch_copy > span:nth-child(16), .catch_copy > span:nth-child(17), .catch_copy > span:nth-child(18) {
+		animation: catch_anime 1.4s forwards 5s;
+	}
+/*
+	.catch_copy span:nth-child(7) {
+		animation: catch_anime 1.4s forwards 3s;
+	}
+
+	.catch_copy span:nth-child(8) {
+		animation: catch_anime 1.4s forwards 3s;
+	}
+
+*/
+
 
 @keyframes catch_anime {
 	0% {
@@ -749,7 +783,7 @@ body {
 }
 
 	#page-top a {
-		background: #4b4b4b;
+		background: var(--main-bg-color);
 		text-decoration: none;
 		color: #fff;
 		padding: 10px;
