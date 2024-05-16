@@ -131,9 +131,9 @@ header {
 .slide-items {
 	list-style: none;
 	position: relative;
-	margin: 6vmax 5vmax;
-	border-radius: .5vmax;
-	width: calc(100% - 10vmax);
+	margin: 6vmax 0;
+/*	border-radius: .5vmax;*/
+	width: 100%;
 	height: 50vmax;
 	overflow: hidden;
 	/*	filter: grayscale(100%);*/
@@ -381,7 +381,8 @@ h2 {
 	margin-top: -10px;
 }
 #contents section + section {
-	margin-top: 30px;
+	/*margin-top: 30px;*/
+	padding-bottom:2vmax;
 	align-items: center;
 }
 
@@ -596,13 +597,35 @@ footer .pr {
 
 /*profile
 ---------------------------------------------------------------------------*/
+.profileSentence {
+display:flex;
+}
+.profile > article {
+	display: flex;
+	flex-direction: column;
+}
+	.profile > article > span {
+	padding:.5vmax 0;
+	}
+	.profileSentence > section:nth-child(1) {
+		text-align: center;
+	}
+.about {
+padding-left:5vmax;
+}
 .about span {
-	text-align: center;
+	/*text-align: center;*/
 	padding: .25vmax;
 	letter-spacing: .1em;
-	display:none;
+	display: none;
 }
 
+	.about .skill {
+		font-weight: bold;
+		padding-top: 1vmax;
+		text-align:center;
+		/*padding-bottom: 1vmax;*/
+	}
 /*テキストフェードイン*/
 .catch_copy>span {
 	transition: .5s;
@@ -612,37 +635,26 @@ footer .pr {
 }
 
 	.catch_copy>span:first-child {
-		animation: catch_anime 1.4s forwards .5s;
-	}
-
-	.catch_copy>span:nth-child(2) {
-		animation: catch_anime 1.4s forwards 1s;
-	}
-
-	.catch_copy>span:nth-child(3) {
 		animation: catch_anime 1.4s forwards 2s;
+		
 	}
 
-	.catch_copy > span:nth-child(4), .catch_copy > span:nth-child(5), .catch_copy > span:nth-child(6), .catch_copy > span:nth-child(7), .catch_copy > span:nth-child(8), .catch_copy > span:nth-child(9), .catch_copy > span:nth-child(10) {
+	.catch_copy > span:nth-child(2), .catch_copy > span:nth-child(3), .catch_copy > span:nth-child(4), .catch_copy > span:nth-child(5), .catch_copy > span:nth-child(6), .catch_copy > span:nth-child(7), .catch_copy > span:nth-child(8) {
 		animation: catch_anime 1.4s forwards 3s;
+	
 	}
-	.catch_copy>span:nth-child(11) {
+
+
+	 .catch_copy > span:nth-child(9) {
 		animation: catch_anime 1.4s forwards 4s;
+	
 	}
 
-	.catch_copy > span:nth-child(12), .catch_copy > span:nth-child(13), .catch_copy > span:nth-child(14), .catch_copy > span:nth-child(15), .catch_copy > span:nth-child(16), .catch_copy > span:nth-child(17), .catch_copy > span:nth-child(18) {
-		animation: catch_anime 1.4s forwards 5s;
-	}
-/*
-	.catch_copy span:nth-child(7) {
-		animation: catch_anime 1.4s forwards 3s;
-	}
+.catch_copy > span:nth-child(10), .catch_copy > span:nth-child(11),.catch_copy > span:nth-child(12), .catch_copy > span:nth-child(13), .catch_copy > span:nth-child(14), .catch_copy > span:nth-child(15), .catch_copy > span:nth-child(16), .catch_copy > span:nth-child(17), .catch_copy > span:nth-child(18) {
+	animation: catch_anime 1.4s forwards 5s;
 
-	.catch_copy span:nth-child(8) {
-		animation: catch_anime 1.4s forwards 3s;
-	}
+}
 
-*/
 
 
 @keyframes catch_anime {
@@ -679,45 +691,11 @@ footer .pr {
 	}
 
 
-/*画面幅580px以下の設定
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:580px){
-
-/*全体の設定
----------------------------------------------------------------------------*/
-body {
-	font-size: 12px;	/*文字サイズ*/
-	line-height: 1.5;	/*行間*/
-}
-
-/*メニュー
----------------------------------------------------------------------------*/
-/*メニュー１個あたりの設定*/
-	.menu-content {
-	width:100%;
-	}
 
 
-	#menubar li {
-		display: block; /*縦並びにする設定*/
-	}
-#menubar li a {
-	text-decoration: none;
-	padding: 8px 30px;	/*各メニュー内の余白。*/
-}
 
-/*Galleryページ
----------------------------------------------------------------------------*/
-/*各ブロックごとの設定*/
-.list {
-	padding: 10px;	/*ボックス内の余白*/
-}
 
-/*その他
----------------------------------------------------------------------------*/
-.ws,.wl {width: 94%;}
 
-}
 
 /*ローディングアニメ
 ---------------------------------------------------------------------------*/
@@ -775,7 +753,7 @@ body {
 /*ページトップに戻るボタン*/
 #page-top {
 	position: fixed;
-	bottom: 20px;
+	bottom: 40px;
 	right: 20px;
 	font-size: 14px;
 	line-height: 1;
@@ -803,3 +781,64 @@ body {
 		height: 30px;
 		width: 30px;
 	}
+
+
+
+/*画面幅580px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:580px) {
+
+	/*全体の設定
+---------------------------------------------------------------------------*/
+	body {
+		font-size: 12px; /*文字サイズ*/
+		line-height: 1.5; /*行間*/
+	}
+
+	/*メニュー
+---------------------------------------------------------------------------*/
+	/*メニュー１個あたりの設定*/
+	.menu-content {
+		width: 100%;
+	}
+
+
+	#menubar li {
+		display: block; /*縦並びにする設定*/
+	}
+
+		#menubar li a {
+			text-decoration: none;
+			padding: 8px 30px; /*各メニュー内の余白。*/
+		}
+	/*profile
+---------------------------------------------------------------------------*/
+	.profileSentence {
+		display: initial;
+	}
+
+
+	.catch_copy {
+		margin-left: 0;
+	}
+	.about {
+		padding-left: initial;
+	}
+	.about .skill {
+		
+		padding-top: 2vmax;
+		padding-bottom: 1vmax;
+	}
+	/*Galleryページ
+---------------------------------------------------------------------------*/
+	/*各ブロックごとの設定*/
+	.list {
+		padding: 10px; /*ボックス内の余白*/
+	}
+
+	/*その他
+---------------------------------------------------------------------------*/
+	.ws, .wl {
+		width: 94%;
+	}
+}
