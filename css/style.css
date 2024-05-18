@@ -172,6 +172,7 @@ header {
 	z-index: 5;
 	background-color: var(--main-bg-color);
 	cursor: pointer;
+	opacity:.8;
 }
 
 	.menu-btn span,
@@ -184,6 +185,7 @@ header {
 		border-radius: 3px;
 		background-color: #ffffff;
 		position: absolute;
+	
 	}
 
 		.menu-btn span:before {
@@ -225,6 +227,7 @@ header {
 	z-index: 4;
 	background-color: var(--main-bg-color);
 	transition: all 0.5s; /*アニメーション設定*/
+	opacity:.8;
 }
 
 		.menu-content ul li {
@@ -295,6 +298,7 @@ header {
 		position: relative;
 		/*color: #000;*/
 		transition: .5s 0s;
+
 	}
 
 		#menubar li a::before {
@@ -351,15 +355,51 @@ h2 {
 	}
 
 
-	#contents h2 {
-		/*color: #fff;*/ /*文字色*/
-		padding: 20px 20px 0; /*上下、左右への余白*/
-		/*background: #FFBE98;*/ /*背景色*/
-		border-radius: 10px; /*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
-		text-align: center;
-		font-weight: bold;
-		font-size: 30px;
+#contents h1 {
+	position: relative;
+	display: inline-block;
+	padding: 2vmax 55px;
+}
+
+	#contents h1:before, #contents h1:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		display: inline-block;
+		width: 45px;
+		height: 1px;
+		background-color: black;
 	}
+
+	#contents h1:before {
+		left: 0;
+	}
+
+	#contents h1:after {
+		right: 0;
+	}
+
+
+#contents h2 {
+	color: #fff; /*文字色*/
+	padding: 20px 20px 0; /*上下、左右への余白*/
+	/*background: #FFBE98;*/ /*背景色*/
+	border-radius: 10px; /*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	background: rgba(44, 44, 44, 0.4);
+	box-shadow: 0px 0px 0px 5px rgba(44, 44, 44, 0.4);
+	border: dashed 2px white;
+	padding: 0.2em 0.5em;
+	margin:revert;
+}
+
+
+
+
+
+
 /*コンテンツのh3タグの設定*/
 #contents h3 {
 
@@ -430,7 +470,7 @@ h2 {
 		max-width: 300px;
 		height: auto;
 		/*		background: #FFF;*/
-		margin: 1vmax;
+		margin: .5vmax;
 		flex: 1;
 	}
 
@@ -810,6 +850,8 @@ padding-left:5vmax;
 		#menubar li a {
 			text-decoration: none;
 			padding: 8px 30px; /*各メニュー内の余白。*/
+			height: 10vmax;
+			line-height: 10vmax;
 		}
 	/*profile
 ---------------------------------------------------------------------------*/
@@ -828,6 +870,10 @@ padding-left:5vmax;
 		
 		padding-top: 2vmax;
 		padding-bottom: 1vmax;
+	}
+
+	.catch_copy span {
+		padding: 1vmax;
 	}
 	/*Galleryページ
 ---------------------------------------------------------------------------*/
