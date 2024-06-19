@@ -341,13 +341,13 @@ h2 {
 	width: calc(100% - 10vmax);
 	margin: auto;
 	margin-bottom: 5vmax;
-	box-shadow: 5px 6px 15px -5px #c9c8c5;
+	border-radius:1vmax;
 }
-#container > #contents > section {
-	background: #fff;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 35%, rgba(247, 247, 247, 1) 100%);
+#container > #contents > section:not(#section2) {
+	/*background: #fff;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 35%, rgba(247, 247, 247, 1) 100%);*/
 	/* 画像ファイルの指定 */
-	background-image: url("../images/bg_image.jpg");
+	/*background-image: url("../images/bg_image.jpg");*/
 }
 	#contents > section > article {
 
@@ -381,18 +381,14 @@ h2 {
 
 
 #contents h2 {
-	color: #fff; /*文字色*/
 	padding: 20px 20px 0; /*上下、左右への余白*/
 	/*background: #FFBE98;*/ /*背景色*/
-	border-radius: 10px; /*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 	text-align: center;
 	font-weight: bold;
-	font-size: 30px;
-	background: rgba(44, 44, 44, 0.4);
-	box-shadow: 0px 0px 0px 5px rgba(44, 44, 44, 0.4);
-	border: dashed 2px white;
+	font-size: 20px;
+	background: #f4f4f4;
 	padding: 0.2em 0.5em;
-	margin:revert;
+	margin: revert;
 }
 
 
@@ -626,7 +622,10 @@ footer .pr {
 
 }
 
-
+	.pflimg img {
+		max-width:100px;
+		clip-path: circle(50px at center);
+	}
 
 
 	.name {
@@ -637,9 +636,7 @@ footer .pr {
 
 /*profile
 ---------------------------------------------------------------------------*/
-.profileSentence {
-display:flex;
-}
+
 .profile > article {
 	display: flex;
 	flex-direction: column;
@@ -660,38 +657,44 @@ padding-left:5vmax;
 	display: none;
 }
 
-	.about .skill {
-		font-weight: bold;
-		padding-top: 1vmax;
-		text-align:center;
-		/*padding-bottom: 1vmax;*/
-	}
+
+.skill {
+margin-top:5vmax;
+
+}
+
+.about .skill {
+	font-weight: bold;
+	padding-top: 1vmax;
+	padding-bottom: 1vmax;
+}
 /*テキストフェードイン*/
 .catch_copy>span {
 	transition: .5s;
 	opacity: 0;
 	transform: translateY(20px);
 	display: block !important;
+	line-height:1.5;
 }
 
 	.catch_copy>span:first-child {
-		animation: catch_anime 1.4s forwards 2s;
+		animation: catch_anime .5s forwards 1.4s;
 		
 	}
 
 	.catch_copy > span:nth-child(2), .catch_copy > span:nth-child(3), .catch_copy > span:nth-child(4), .catch_copy > span:nth-child(5), .catch_copy > span:nth-child(6), .catch_copy > span:nth-child(7), .catch_copy > span:nth-child(8) {
-		animation: catch_anime 1.4s forwards 3s;
+		animation: catch_anime .8s forwards 2s;
 	
 	}
 
 
 	 .catch_copy > span:nth-child(9) {
-		animation: catch_anime 1.4s forwards 4s;
+		animation: catch_anime 1s forwards 3s;
 	
 	}
 
 .catch_copy > span:nth-child(10), .catch_copy > span:nth-child(11),.catch_copy > span:nth-child(12), .catch_copy > span:nth-child(13), .catch_copy > span:nth-child(14), .catch_copy > span:nth-child(15), .catch_copy > span:nth-child(16), .catch_copy > span:nth-child(17), .catch_copy > span:nth-child(18) {
-	animation: catch_anime 1.4s forwards 5s;
+	animation: catch_anime 1s forwards 4s;
 
 }
 
@@ -724,10 +727,11 @@ padding-left:5vmax;
 		transition: all .3s ease;
 	}
 
-	#section3 article {
+	#section4 article {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-top:5vmax;
 	}
 
 
@@ -797,7 +801,7 @@ padding-left:5vmax;
 	right: 20px;
 	font-size: 14px;
 	line-height: 1;
-	z-index: 99;
+	z-index: 5;
 }
 
 	#page-top a {
@@ -855,9 +859,7 @@ padding-left:5vmax;
 		}
 	/*profile
 ---------------------------------------------------------------------------*/
-	.profileSentence {
-		display: initial;
-	}
+
 
 
 	.catch_copy {
