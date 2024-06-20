@@ -468,7 +468,7 @@ h2 {
 		/*		background: #FFF;*/
 		margin: .5vmax;
 		flex: 1;
-		clip-path: circle(50% at 50% 50%);
+		/*clip-path: circle(50% at 50% 50%);*/
 	}
 
 	.gallery_block img {
