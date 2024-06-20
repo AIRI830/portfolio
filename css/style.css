@@ -368,7 +368,7 @@ h2 {
 		display: inline-block;
 		width: 45px;
 		height: 1px;
-		background-color: black;
+		background-color: #999;
 	}
 
 	#contents h1:before {
@@ -468,10 +468,14 @@ h2 {
 		/*		background: #FFF;*/
 		margin: .5vmax;
 		flex: 1;
+		clip-path: circle(50% at 50% 50%);
 	}
 
 	.gallery_block img {
 		box-shadow: 0 .5vmax 1.5vmax 0 rgba(0, 0, 0, .2);
+		clip-path: circle(35% at 50% 50%);
+		max-width: -webkit-fill-available;
+		height: -webkit-fill-available;
 	}
 
 	.gallery_block a img:hover {
@@ -479,20 +483,28 @@ h2 {
 		transition: 0.3s;
 	}
 
+   #section5 {
 
-/*ビューワー設定*/
-.optionBox {
-	display: none;
-	position: absolute;
-	top: 70px;
-	right: 0;
-	left: 0;
-	width: 180px;
-	margin: 0 auto;
-	padding: 10px 20px;
-	background: #fff;
-	box-shadow: 2px 2px 10px rgba(44, 44, 44, 0.4);
-}
+	   text-align:center;
+    }
+	#section5 h1 {
+	margin-top:5vmax;
+	}
+
+
+	/*ビューワー設定*/
+	.optionBox {
+		display: none;
+		position: absolute;
+		top: 70px;
+		right: 0;
+		left: 0;
+		width: 180px;
+		margin: 0 auto;
+		padding: 10px 20px;
+		background: #fff;
+		box-shadow: 2px 2px 10px rgba(44, 44, 44, 0.4);
+	}
 
 
 	/*フッター(ページ最下部のcopyrightのパーツ)設定
@@ -583,7 +595,7 @@ footer .pr {
 		background: #eee;
 	}
 	.ta1 tbody tr:nth-child(n + 2) {
-		background: #fff;
+		background: #efefef;
 	}
 
 /*トップページのNEWアイコン
@@ -714,13 +726,13 @@ margin-top:5vmax;
 /*お問い合わせ
 ---------------------------------------------------------------------------*/
 .mail {
-	width: 8vmax;
-	height: 8vmax;
-	min-width: 60px;
-	min-height: 60px;
-	max-width:80px;
-	max-height:80px;
-	margin-bottom:2vmax;
+	width: 5vmax;
+	height: 5vmax;
+	min-width: 40px;
+	min-height: 40px;
+	max-width: 60px;
+	max-height: 60px;
+	margin-bottom: 2vmax;
 }
 	.mail img:hover {
 		opacity: .5;
