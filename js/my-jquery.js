@@ -59,10 +59,31 @@ $(function () {
     });
 });
 
+
+
+
+
+/*ページTOPに戻るボタン*/
+$(function () {
+    var pagetop = $('#menubar');
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    //pagetop.click(function () {
+    //    $('body, html').animate({ scrollTop: 0 }, 500);
+    //    return false;
+    //});
+});
+
 /*メール暗号化*/
 $(document).ready(function () {
-    var mailadd = "akkikkakaakkaak.kaaaakakaakkkaamkkakaaakaakak";
-    var mailadd_2 = mailadd.replace(/k/g, "");
+    var mailadd = "tvovkavnvo.avivriv@vgmvavivlvv.cvovmvv";
+    var mailadd_2 = mailadd.replace(/v/g, "");
   /*  $(".mail-contact").text(mailadd_2);*/
     $(".mail-contact").append('<div class="aa"></div>');
     $(".mail-contact").attr("href", "mailto:" + mailadd_2);
@@ -78,4 +99,16 @@ $(function () {
         
     });
 
+});
+
+/*スムーススクロール*/
+$(function () {
+    $('a[href^=#]').click(function () {
+        var speed = 500;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({ scrollTop: position }, speed, "swing");
+        return false;
+    });
 });

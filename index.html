@@ -8,6 +8,7 @@
     <meta name="description" content="AIRIのポートフォリオサイトです。経歴や作品等の紹介をします。">
     <meta name="keywords" content="ポートフォリオ,Webデザイン">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <!--//fabicon-->
     <link rel="icon" href="images/favicon.ico">
     <!--[if lt IE 9]>
@@ -37,6 +38,20 @@
         <section class=""><div><img src="images/iris_white.svg"></div></section>
         <h2 class="roboto-slab">AIRI'S PORTFOLIO</h2>
         <!--<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>-->
+
+        <section class="naviMenu">
+            <ul>
+                <li><a href="#section1" data-hover-text="メイン">Main</a></li>
+                <li><a href="#section5" data-hover-text="ギャラリー">Gallery</a></li>
+                <li><a href="#section2" data-hover-text="自己紹介">Profile</a></li>
+                <li><a href="#section3" data-hover-text="スキル">Skill</a></li>
+                <li><a href="#section4" data-hover-text="お問い合わせ">Contact</a></li>
+
+                <!-- <li><a href="gallery.html" data-hover-text="ギャラリー">Gallery</a></li>-->
+            </ul>
+        </section>
+
+
         <nav id="menubar">
 
             <input type="checkbox" id="menu-btn-check">
@@ -45,10 +60,12 @@
             <div class="menu-content">
                 <ul>
                     <li><a href="#section1" data-hover-text="メイン">Main</a></li>
+                    <li><a href="#section5" data-hover-text="ギャラリー">Gallery</a></li>
                     <li><a href="#section2" data-hover-text="自己紹介">Profile</a></li>
                     <li><a href="#section3" data-hover-text="スキル">Skill</a></li>
                     <li><a href="#section4" data-hover-text="お問い合わせ">Contact</a></li>
-                    <li><a href="gallery.html" data-hover-text="ギャラリー">Gallery</a></li>
+
+                    <!-- <li><a href="gallery.html" data-hover-text="ギャラリー">Gallery</a></li>-->
                 </ul>
             </div>
 
@@ -56,13 +73,14 @@
 
     </header>
     <div id="container">
-        <a href="gallery.html" data-hover-text="ギャラリー">
+        <a href="#section5" data-hover-text="ギャラリー">
+            <!--<a href="gallery.html" data-hover-text="ギャラリー">-->
             <!--<div id="mainimg"><img src="images/mainimg.jpg" alt=""></div>-->
 
             <div class="slide-items roboto-slab" id="js-slide">
-                <section class="siteTitle">AIRI'S PORTFOLIO</section>
-                <img src="images/beach.JPG" alt="">
-                <img src="images/stainedglass.JPG" alt="">
+                <!--<section class="siteTitle">AIRI'S PORTFOLIO</section>-->
+                <img src="images/tutuji.JPG" alt="">
+                <img src="images/minamo.JPG" alt="">
                 <img src="images/wing.JPG" alt="">
             </div>
 
@@ -73,7 +91,120 @@
 
         <div id="contents">
 
+            <section id="section5">
+                <h2 class="dancing-script">Gallery</h2>
+                <h1>Photo</h1>
+                <section class="gallery_block">
 
+                    <div>
+
+                        <div>
+                            <a href="./images/beach2.jpg" data-lightbox="album" data-title=""><img src="./images/beach2.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/cat2.jpg" data-lightbox="album" data-title=""><img src="./images/cat2.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/minamo.jpg" data-lightbox="album" data-title=""><img src="./images/minamo.jpg"></a>
+                        </div>
+                        <!--<div>
+        <a href="./images/yokohama.JPG" data-lightbox="album" data-title=""><img src="./images/yokohama.JPG"></a>
+    </div>-->
+                        <div>
+                            <a href="./images/rose.jpg" data-lightbox="album" data-title=""><img src="./images/rose.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/pengin.JPG" data-lightbox="album" data-title=""><img src="./images/pengin.JPG"></a>
+                        </div>
+                        <div>
+                            <a href="./images/tutuji.JPG" data-lightbox="album" data-title=""><img src="./images/tutuji.JPG"></a>
+                        </div>
+                        <div>
+                            <a href="./images/elephant.jpg" data-lightbox="album" data-title=""><img src="./images/elephant.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/kai.jpg" data-lightbox="album" data-title=""><img src="./images/kai.jpg"></a>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <h1>Illustration</h1>
+                <section class="gallery_block">
+
+                    <div>
+
+                        <div>
+                            <a href="./images/trees.jpg" data-lightbox="album" data-title=""><img src="./images/trees.jpg"></a>
+                        </div>
+
+                        <div>
+                            <a href="./images/flamingo.jpg" data-lightbox="album" data-title=""><img src="./images/flamingo.jpg"></a>
+                        </div>
+
+                        <div>
+                            <a href="./images/eye1.jpg" data-lightbox="album" data-title=""><img src="./images/eye1.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/eye2.jpg" data-lightbox="album" data-title=""><img src="./images/eye2.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/nike.jpg" data-lightbox="album" data-title=""><img src="./images/nike.jpg"></a>
+                        </div>
+
+                        <div>
+                            <a href="./images/wing.JPG" data-lightbox="album" data-title=""><img src="./images/wing.JPG"></a>
+                        </div>
+                        <div>
+                            <a href="./images/egg.jpg" data-lightbox="album" data-title=""><img src="./images/egg.jpg"></a>
+                        </div>
+
+                    </div>
+                </section>
+
+                <h1>Works</h1>
+                <section class="gallery_block">
+
+                    <div>
+
+
+                        <div>
+                            <a href="./images/kamome.jpg" data-lightbox="album" data-title="有限会社戸叶運輸企業ロゴ"><img src="./images/kamome.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/swan.jpg" data-lightbox="album" data-title="ロンドンをテーマとした架空のロゴマーク_1"><img src="./images/swan.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/london.jpg" data-lightbox="album" data-title="ロンドンをテーマとした架空のロゴマーク_2"><img src="./images/london.jpg"></a>
+                        </div>
+
+                        <div>
+                            <a href="./images/clipton_image.jpg" data-lightbox="album" data-title="ゲームアプリ用アイコン画像"><img src="./images/clipton_image.jpg"></a>
+                        </div>
+                       
+                        <div>
+                            <a href="./images/2016newyear.jpg" data-lightbox="album" data-title="2016年賀用画像"><img src="./images/2016newyear.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="./images/snow.png" data-lightbox="album" data-title="雪アイコン"><img src="./images/snow.png"></a>
+                        </div>
+
+                        <div>
+                            <a href="./images/withYou_Logo.png" data-lightbox="album" data-title="Webシステムロゴ"><img src="./images/withYou_Logo.png"></a>
+                        </div>
+                        <div>
+                            <a href="./images/withyou_image.jpg" data-lightbox="album" data-title="Webシステム各画面デザイン"><img src="./images/withyou_image.jpg"></a>
+                        </div>
+
+
+                    </div>
+                </section>
+
+
+
+
+            </section>
             <section id="section2">
 
 
@@ -85,8 +216,16 @@
                         <div class="pflimg"><img src="images/profile.jpg"></div>
                         <p class="name">AIRI</p>
                         <article>
+                            <!--<span>
+        サイトをご覧いただき、ありがとうございます。AIRIと申します。
+    </span>-->
                             <span>北海道札幌市出身</span>
-                            <span>HTML/CSSコーダー</span>
+
+
+                            <span>
+                                経歴：前職では、コンテンツ制作会社にてHTML,CSSコーダーとして2Dグラフィッカーとして経験を積んだのち、医療IT系の企業に8年間勤務し、自社製のWebアプリケーション開発に携わっておりました。また、一般事務職の経験もございます。
+                            </span>
+                            <span>趣味：イラスト作成、旅行、美術館巡り、喫茶店巡り、古民家・神社仏閣めぐり、舞台鑑賞、ぬい撮り</span>
                         </article>
                     </section>
 
@@ -95,6 +234,7 @@
 
 
             </section>
+
             <section id="section3">
 
 
@@ -160,5 +300,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="js/slide.js"></script>
+    <script src="js/my-jquery.js"></script>
+    <script src="js/lightbox.min.js"></script>
 </body>
 </html>
