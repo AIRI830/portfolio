@@ -198,6 +198,30 @@ header {
 		padding: .5vmax 0;
 	}
 
+
+
+
+		.naviMenu li a::before {
+			/*display: block;*/
+			position: absolute;
+			/*			top: 50%;*/
+		/*	left: 50%;
+			transform: translateX(-50%) translateY(-50%);*/
+			color: transparent;
+			text-align: center;
+			/*	text-decoration: underline;*/
+			white-space: nowrap;
+			transition: 0.5s;
+			content: attr(data-hover-text);
+		}
+
+		.naviMenu li a:hover {
+			color: transparent;
+		}
+
+	.naviMenu li a:hover::before {
+		color: #ffffff;
+	}
 /*メニュー
 ---------------------------------------------------------------------------*/
 /*メニューボタン*/
@@ -698,18 +722,25 @@ footer .pr {
 /*profile
 ---------------------------------------------------------------------------*/
 
-.profile > article {
+/*.profile > article {
 	display: flex;
 	flex-direction: column;
-}
+}*/
 	.profile > article > span {
 	padding:.5vmax 0;
 	}
 	.profileSentence > section:nth-child(1) {
 		text-align: center;
 	}
-.about {
-padding-left:5vmax;
+.profile > article > span:nth-child(1) {
+	margin-bottom:2vmax;
+}
+.profile > article > span:nth-child(n+2) {
+	text-align: left;
+}
+#section3 article {
+	display:flex;
+	justify-content:center;
 }
 .about span {
 	/*text-align: center;*/
