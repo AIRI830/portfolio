@@ -5,7 +5,7 @@
 //   /* $(".gallery_block div").css("background", "#cccccc");*/
 //    $(".gallery_block div").click(function () {
 //        $('.optionBox').css("display", "block");
-//    }); 
+//    });
 
 //});
 
@@ -13,7 +13,7 @@
 //$(function () {
 //    $('.optionBox').click(function () {
 //        $('.optionBox').css("display", "none");
-//    }); 
+//    });
 //});
 
 
@@ -24,6 +24,16 @@
 //    console.log('外側がクリックされました。');
 //  }
 //});
+
+
+
+
+
+
+$(function () {
+    $('html,body').animate({ scrollTop: 0 }, '1');
+});
+
 
 // 要素が画面内に入ったらclass付与
 $(window).scroll(function () {
