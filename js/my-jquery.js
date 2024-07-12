@@ -52,6 +52,40 @@ $(window).scroll(function () {
     });
 });
 
+$(window).scroll(function () {
+    $('.about2').each(function () {
+        var hit = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var wHeight = $(window).height();
+        var customTop = 10;
+        if (typeof $(this).data('about2') !== 'undefined') {
+            // data-effect="任意の値" が設定されている場合
+            customTop = $(this).data('about2');
+        }
+        if (hit + customTop < wHeight + scroll) {
+            $(this).addClass("catch_copy2");
+        }
+    });
+});
+
+$(window).scroll(function () {
+    $('.about3').each(function () {
+        var hit = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var wHeight = $(window).height();
+        var customTop = 10;
+        if (typeof $(this).data('about3') !== 'undefined') {
+            // data-effect="任意の値" が設定されている場合
+            customTop = $(this).data('about3');
+        }
+        if (hit + customTop < wHeight + scroll) {
+            $(this).addClass("catch_copy3");
+        }
+    });
+});
+
+
+
 /*ページTOPに戻るボタン*/
 $(function () {
     var pagetop = $('#page-top');
