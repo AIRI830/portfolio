@@ -210,7 +210,7 @@ header {
     }
 
         .naviMenu li:hover {
-            background: #6b6b6b;
+            background: var(--main-bg-color);
             -webkit-transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
@@ -844,7 +844,7 @@ footer {
 }
 
     .catch_copy > span:first-child {
-        animation: catch_anime 1s forwards 1.8s;
+        animation: catch_anime .1s forwards 1.5s;
     }
 
     .catch_copy > span:nth-child(2),
@@ -858,7 +858,7 @@ footer {
     .catch_copy > span:nth-child(10),
     .catch_copy > span:nth-child(11),
     .catch_copy > span:nth-child(12) {
-        animation: catch_anime 1s forwards 1.8s;
+        animation: catch_anime .1s forwards 1.5s;
     }
 
 .catch_copy2 > span {
@@ -870,7 +870,7 @@ footer {
 }
 
     .catch_copy2 > span:first-child {
-        animation: catch_anime 1s forwards 2s;
+        animation: catch_anime 1s forwards 1.5s;
     }
 
     .catch_copy2 > span:nth-child(2),
@@ -884,7 +884,7 @@ footer {
     .catch_copy2 > span:nth-child(10),
     .catch_copy2 > span:nth-child(11),
     .catch_copy2 > span:nth-child(12) {
-        animation: catch_anime 1s forwards 2.5s;
+        animation: catch_anime 1s forwards 1.5s;
     }
 .catch_copy3 > span {
     transition: .5s;
@@ -895,7 +895,7 @@ footer {
 }
 
     .catch_copy3 > span:first-child {
-        animation: catch_anime 1s forwards 2s;
+        animation: catch_anime 1s forwards 1.5s;
     }
     .catch_copy3 > span:nth-child(2),
     .catch_copy3 > span:nth-child(3),
@@ -908,25 +908,9 @@ footer {
     .catch_copy3 > span:nth-child(10),
     .catch_copy3 > span:nth-child(11),
     .catch_copy3 > span:nth-child(13) {
-        animation: catch_anime 1s forwards 2.5s;
-    }
-/*
-    .catch_copy > span:nth-child(9) {
-        animation: catch_anime 1s forwards 3s;
+        animation: catch_anime 1s forwards 1.5s;
     }
 
-    .catch_copy > span:nth-child(10),
-    .catch_copy > span:nth-child(11),
-    .catch_copy > span:nth-child(12),
-    .catch_copy > span:nth-child(13),
-    .catch_copy > span:nth-child(14),
-    .catch_copy > span:nth-child(15),
-    .catch_copy > span:nth-child(16),
-    .catch_copy > span:nth-child(17),
-    .catch_copy > span:nth-child(18) {
-        animation: catch_anime 1s forwards 4s;
-    }
-*/
 
 
 @keyframes catch_anime {
