@@ -6,7 +6,6 @@
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
-/*// <uniquiifier > : 一意でわかりやすいクラス名を使用します。 // <weight > : 100 ～ 900 の値を使用します。*/
 .roboto-slab {
     font-family: "Roboto Slab", serif;
 }
@@ -482,14 +481,13 @@ h2 {
 
 
 #contents h2 {
-    padding: 20px 20px 0; /*上下、左右への余白*/
-    /*background: #FFBE98;*/ /*背景色*/
+    padding: 20px 20px 0; 
     text-align: center;
     font-weight: bold;
     font-size: 5vmax;
-/*    background: #f4f4f4;*/
     padding: 0.2em 0.5em;
     margin: revert;
+    border-bottom: .25vmax solid #999;
 }
 
 
@@ -829,7 +827,7 @@ footer {
     margin-top: 5vmax;
 }
 
-.about .skill {
+.about .skill, .about2 .skill, .about3 .skill {
     font-weight: bold;
     padding-top: 1vmax;
     padding-bottom: 1vmax;
@@ -846,22 +844,89 @@ footer {
 }
 
     .catch_copy > span:first-child {
-        animation: catch_anime .5s forwards 1.4s;
+        animation: catch_anime 1s forwards 1.8s;
     }
 
-    .catch_copy > span:nth-child(2), .catch_copy > span:nth-child(3), .catch_copy > span:nth-child(4), .catch_copy > span:nth-child(5), .catch_copy > span:nth-child(6), .catch_copy > span:nth-child(7), .catch_copy > span:nth-child(8) {
-        animation: catch_anime .8s forwards 2s;
+    .catch_copy > span:nth-child(2),
+    .catch_copy > span:nth-child(3),
+    .catch_copy > span:nth-child(4),
+    .catch_copy > span:nth-child(5),
+    .catch_copy > span:nth-child(6),
+    .catch_copy > span:nth-child(7),
+    .catch_copy > span:nth-child(8),
+    .catch_copy > span:nth-child(9),
+    .catch_copy > span:nth-child(10),
+    .catch_copy > span:nth-child(11),
+    .catch_copy > span:nth-child(12) {
+        animation: catch_anime 1s forwards 1.8s;
     }
 
+.catch_copy2 > span {
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+    display: block !important;
+    line-height: 1.5;
+}
 
+    .catch_copy2 > span:first-child {
+        animation: catch_anime 1s forwards 2s;
+    }
+
+    .catch_copy2 > span:nth-child(2),
+    .catch_copy2 > span:nth-child(3),
+    .catch_copy2 > span:nth-child(4),
+    .catch_copy2 > span:nth-child(5),
+    .catch_copy2 > span:nth-child(6),
+    .catch_copy2 > span:nth-child(7),
+    .catch_copy2 > span:nth-child(8),
+    .catch_copy2 > span:nth-child(9),
+    .catch_copy2 > span:nth-child(10),
+    .catch_copy2 > span:nth-child(11),
+    .catch_copy2 > span:nth-child(12) {
+        animation: catch_anime 1s forwards 2.5s;
+    }
+.catch_copy3 > span {
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+    display: block !important;
+    line-height: 1.5;
+}
+
+    .catch_copy3 > span:first-child {
+        animation: catch_anime 1s forwards 2s;
+    }
+    .catch_copy3 > span:nth-child(2),
+    .catch_copy3 > span:nth-child(3),
+    .catch_copy3 > span:nth-child(4),
+    .catch_copy3 > span:nth-child(5),
+    .catch_copy3 > span:nth-child(6),
+    .catch_copy3 > span:nth-child(7),
+    .catch_copy3 > span:nth-child(8),
+    .catch_copy3 > span:nth-child(9),
+    .catch_copy3 > span:nth-child(10),
+    .catch_copy3 > span:nth-child(11),
+    .catch_copy3 > span:nth-child(13) {
+        animation: catch_anime 1s forwards 2.5s;
+    }
+/*
     .catch_copy > span:nth-child(9) {
         animation: catch_anime 1s forwards 3s;
     }
 
-    .catch_copy > span:nth-child(10), .catch_copy > span:nth-child(11), .catch_copy > span:nth-child(12), .catch_copy > span:nth-child(13), .catch_copy > span:nth-child(14), .catch_copy > span:nth-child(15), .catch_copy > span:nth-child(16), .catch_copy > span:nth-child(17), .catch_copy > span:nth-child(18) {
+    .catch_copy > span:nth-child(10),
+    .catch_copy > span:nth-child(11),
+    .catch_copy > span:nth-child(12),
+    .catch_copy > span:nth-child(13),
+    .catch_copy > span:nth-child(14),
+    .catch_copy > span:nth-child(15),
+    .catch_copy > span:nth-child(16),
+    .catch_copy > span:nth-child(17),
+    .catch_copy > span:nth-child(18) {
         animation: catch_anime 1s forwards 4s;
     }
-
+*/
 
 
 @keyframes catch_anime {
@@ -1055,7 +1120,7 @@ footer {
         padding-left: initial;
     }
 
-        .about .skill {
+        .about .skill, .about2 .skill, .about3 .skill {
             padding-top: 2vmax;
             padding-bottom: 1vmax;
         }
