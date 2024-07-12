@@ -815,7 +815,7 @@ footer {
     flex-direction:initial;
 }
 
-.about span {
+.about span, .about2 span, .about3 span {
     /*text-align: center;*/
     padding: .25vmax;
     letter-spacing: .1em;
