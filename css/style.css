@@ -102,6 +102,7 @@ header {
     /*height: calc(60px + 20px);*/
     height: auto;
     text-align: center; /*内容を中央よせ*/
+    background:#fff;
 }
 
     header > section {
@@ -447,7 +448,7 @@ h2 {
     /*background: #fff;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 35%, rgba(247, 247, 247, 1) 100%);*/
     /* 画像ファイルの指定 */
-    /*background-image: url("../images/bg_image.jpg");*/
+    background-image: url("../images/bg_image.jpg");
 }
 
 #contents > section > article {
@@ -458,7 +459,10 @@ h2 {
 #contents h1 {
     position: relative;
     display: inline-block;
-    padding: 2vmax 55px;
+    padding: 1vmax 55px;
+    font-size: 2vmax;
+    background: #eaeaea;
+    margin-bottom: 1vmax;
 }
 
     #contents h1:before, #contents h1:after {
@@ -469,6 +473,7 @@ h2 {
         width: 45px;
         height: 1px;
         background-color: #999;
+
     }
 
     #contents h1:before {
@@ -481,13 +486,21 @@ h2 {
 
 
 #contents h2 {
-    padding: 20px 20px 0; 
+    padding: 20px 20px 0;
+    background: #c8c8c8;
+    color: #fff;
     text-align: center;
     font-weight: bold;
     font-size: 5vmax;
+    width: max-content;
+    height: .25vmax;
+    line-height: .5vmax;
     padding: 0.2em 0.5em;
-    margin: revert;
-    border-bottom: .25vmax solid #999;
+    margin: 5vmax auto;
+    opacity: 0.5;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    /* border-bottom: .5vmax solid #999; */
 }
 
 
@@ -557,29 +570,28 @@ h2 {
     }
         /*各ブロックごとの設定*/
         .gallery_block > div > div {
-            /*border-radius: 3vmax;*/
-            /*		max-width: 15vmax;
-		min-width: 15vmax;*/
-            /*width: calc(100% / 5 - 1vmax* 5);*/
-            /*width: 20vmax;*/
-            min-width: 100px;
-            /*max-width: 300px;
-		height: auto;*/
-            /*		background: #FFF;*/
-            margin: .5vmax;
+            /* border-radius: 3vmax; */
+            /* width: calc(100% / 5 - 1vmax* 5); */
+            /* width: 20vmax; */
+            min-width: 20vmax;
+            max-width: 30vmax;
+            /* background: #FFF; */
+            margin: 1vmax;
             flex: 1;
-            /*clip-path: circle(50% at 50% 50%);*/
+            /* clip-path: circle(50% at 50% 50%); */
         }
 
     .gallery_block img {
-        box-shadow: 0 .5vmax 1.5vmax 0 rgba(0, 0, 0, .2);
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        /*clip-path: circle(35% at 50% 50%);
-		max-width: -webkit-fill-available;
-		height: -webkit-fill-available;*/
-        object-fit: cover;
+        box-shadow: 0 .5vmax 2.5vmax 0 rgba(0, 0, 0, .1);
+        /* width: 20vmax; */
+        /* max-width: 200px; */
+        flex-grow: 1;
+        /* height: 20vmax; */
+        /* max-height: 200px; */
+        border: 1px solid #f1f1f1;
+        /* border-radius: 50%; */
+        /* object-fit: cover; */
+        border-radius: 4px;
     }
 
     .gallery_block a img:hover {
@@ -601,7 +613,7 @@ h2 {
 
 
 /*ビューワー設定*/
-.optionBox {
+            .optionBox {
     display: none;
     position: absolute;
     top: 70px;
@@ -783,7 +795,7 @@ footer {
 .name {
     text-align: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 3.5vmax;
 }
 
 /*profile
@@ -830,7 +842,17 @@ footer {
 .about .skill, .about2 .skill, .about3 .skill {
     font-weight: bold;
     padding-top: 1vmax;
-    padding-bottom: 1vmax;
+    white-space: pre;
+    width: max-content;
+    padding: .5vmax;
+    min-width: 80px;
+    /* text-align: center; */
+    /* padding-bottom: 1vmax; */
+    background: #888;
+    text-align: center !important;
+    border-radius: 2vmax;
+    color: #fff;
+    margin-bottom:1vmax;
 }
 
 
@@ -844,7 +866,7 @@ footer {
 }
 
     .catch_copy > span:first-child {
-        animation: catch_anime .1s forwards 1.5s;
+        animation: catch_anime 1s forwards 1.5s;
     }
 
     .catch_copy > span:nth-child(2),
@@ -858,7 +880,7 @@ footer {
     .catch_copy > span:nth-child(10),
     .catch_copy > span:nth-child(11),
     .catch_copy > span:nth-child(12) {
-        animation: catch_anime .1s forwards 1.5s;
+        animation: catch_anime 1s forwards 1.5s;
     }
 
 .catch_copy2 > span {
@@ -892,6 +914,7 @@ footer {
     transform: translateY(20px);
     display: block !important;
     line-height: 1.5;
+    white-space:pre;
 }
 
     .catch_copy3 > span:first-child {
@@ -927,19 +950,46 @@ footer {
 /*お問い合わせ
 ---------------------------------------------------------------------------*/
 .mail {
-    width: 5vmax;
-    height: 5vmax;
-    min-width: 40px;
-    min-height: 40px;
-    max-width: 60px;
-    max-height: 60px;
+    width: 100px;
+    height: 100px;
+    display: contents;
+    margin: auto;
+    /* min-width: 40px; */
+    /* min-height: 40px; */
+    /* max-width: max-content; */
+    /* max-height: 80px; */
     margin-bottom: 2vmax;
 }
-
-    .mail img:hover {
-        opacity: .5;
-        transition: all .3s ease;
+    .mail p {
+white-space:pre;
     }
+
+    .mail a {
+        width: 500px;
+        height: 100px;
+        margin: auto;
+        display: contents;
+    }
+
+    .mail img {
+        width: 60px;
+        border: none;
+        /* max-width: 100%; */
+        height: auto;
+        vertical-align: middle;
+    }
+
+
+        #contents p {
+            padding: 0px 20px 20px;
+            margin:2vmax;
+        }
+
+
+.mail img:hover {
+    opacity: .5;
+    transition: all .3s ease;
+}
 
 #section4 article {
     display: flex;
@@ -1105,8 +1155,8 @@ footer {
     }
 
         .about .skill, .about2 .skill, .about3 .skill {
-            padding-top: 2vmax;
-            padding-bottom: 1vmax;
+ /*           padding-top: 2vmax;
+            padding-bottom: 1vmax;*/
         }
 
     .catch_copy span {
