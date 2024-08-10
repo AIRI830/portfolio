@@ -41,6 +41,7 @@ body {
     letter-spacing: 2px;
     /*background: linear-gradient(to bottom right, #fbfbfb, #eae5e5);
 */
+    background-image: url(../images/bg_image.jpg);
 }
 
 h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form, figure, form, select, input, textarea {
@@ -439,16 +440,18 @@ h2 {
     /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
     background-attachment: fixed;
     width: calc(100% - 10vmax);
-    margin: auto;
-    margin-bottom: 8vmax;
+    margin: 5vmax auto 8vmax auto;
+    padding: .5vmax;
     border-radius: 1vmax;
+/*    background-image: url(../images/bg_image.jpg);*/
+    background:#fff;
 }
 
 #container > #contents > section:not(#section2) {
     /*background: #fff;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 35%, rgba(247, 247, 247, 1) 100%);*/
     /* 画像ファイルの指定 */
-    background-image: url("../images/bg_image.jpg");
+ /*   background-image: url("../images/bg_image.jpg");*/
 }
 
 #contents > section > article {
@@ -459,10 +462,10 @@ h2 {
 #contents h1 {
     position: relative;
     display: inline-block;
-    padding: 1vmax 55px;
+    padding: .2vmax 55px;
     font-size: 2vmax;
     background: #eaeaea;
-    margin-bottom: 1vmax;
+    margin-bottom: 2vmax;
 }
 
     #contents h1:before, #contents h1:after {
@@ -487,7 +490,7 @@ h2 {
 
 #contents h2 {
     padding: 20px 20px 0;
-    background: #c8c8c8;
+    background: #d9d9d5;
     color: #fff;
     text-align: center;
     font-weight: bold;
@@ -587,7 +590,7 @@ h2 {
         /* max-width: 200px; */
         flex-grow: 1;
         /* height: 20vmax; */
-        /* max-height: 200px; */
+         max-height: 300px; 
         border: 1px solid #f1f1f1;
         /* border-radius: 50%; */
         /* object-fit: cover; */
@@ -850,7 +853,7 @@ footer {
     /* padding-bottom: 1vmax; */
     background: #888;
     text-align: center !important;
-    border-radius: 2vmax;
+    border-radius: .25vmax;
     color: #fff;
     margin-bottom:1vmax;
 }
@@ -930,6 +933,7 @@ footer {
     .catch_copy3 > span:nth-child(9),
     .catch_copy3 > span:nth-child(10),
     .catch_copy3 > span:nth-child(11),
+    .catch_copy3 > span:nth-child(12),
     .catch_copy3 > span:nth-child(13) {
         animation: catch_anime 1s forwards 1.5s;
     }
@@ -1175,13 +1179,19 @@ white-space:pre;
     .list {
         padding: 10px; /*ボックス内の余白*/
     }
+    .gallery_block img {
+    max-height:initial;
+    }
     .gallery_block {
-        padding:initial;
+        padding: initial;
     }
+        .gallery_block > div > div {
+            display: contents;
+        }/*画像配置調整*/
 
-    /*その他
+        /*その他
 ---------------------------------------------------------------------------*/
-    .ws, .wl {
-        width: 94%;
-    }
+        .ws, .wl {
+            width: 94%;
+        }
 }
