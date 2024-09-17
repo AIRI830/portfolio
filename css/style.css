@@ -670,7 +670,7 @@ h2 {
 ---------------------------------------------------------------------------*/
 footer {
     bottom: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     background: var(--main-bg-color);
     clear: both;
