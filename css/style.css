@@ -615,8 +615,17 @@ h2 {
     }
 
 
+.demoLink {
+    font-size: 1.5em;
+    margin: 5vmax 0vmax;
+    
+}
+.demoImg img{
+    max-height: 800px;
+}
+
 /*ビューワー設定*/
-            .optionBox {
+.optionBox {
     display: none;
     position: absolute;
     top: 70px;
