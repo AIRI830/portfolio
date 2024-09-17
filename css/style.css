@@ -7,7 +7,10 @@
 /*全体の設定
 ---------------------------------------------------------------------------*/
 .roboto-slab {
+    color: #ffffff;
     font-family: "Roboto Slab", serif;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0 #999, -1px -1px 0 #cbc9c5, -1px 1px 0 #8f8e84, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0 -1px 0 #545454, -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 
 .dancing-script {
@@ -82,6 +85,7 @@ iframe {
 a {
     color: #999; /*リンクテキストの色*/
     transition: 0.3s; /*マウスオン時の移り変わるまでの時間設定。0.3秒。*/
+    text-decoration: none;
 }
 
     a:hover {
@@ -103,7 +107,7 @@ header {
     /*height: calc(60px + 20px);*/
     height: auto;
     text-align: center; /*内容を中央よせ*/
-    background:#fff;
+    background: #e0dfd1;
 }
 
     header > section {
@@ -118,6 +122,7 @@ header {
             width: 3vmax;
             border-radius: 100%;
             margin: auto;
+            opacity:.9;
         }
 
     header img {
@@ -201,7 +206,7 @@ header {
         width: 100%;
         height: 100%;
         /*  background: var(--main-bg-color);*/
-        border-bottom: .3vmax solid var(--main-bg-color);
+        border-bottom: .3vmax solid #3a3b2e;
     }
 
     .naviMenu li {
@@ -212,7 +217,7 @@ header {
     }
 
         .naviMenu li:hover {
-            background: var(--main-bg-color);
+            background: #3a3b2e;
             -webkit-transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
@@ -443,8 +448,8 @@ h2 {
     margin: 5vmax auto 8vmax auto;
     padding: .5vmax;
     border-radius: 1vmax;
-/*    background-image: url(../images/bg_image.jpg);*/
-    background:#fff;
+    /*    background-image: url(../images/bg_image.jpg);*/
+    background: #fffff4;
 }
 
 #container > #contents > section:not(#section2) {
@@ -464,8 +469,10 @@ h2 {
     display: inline-block;
     padding: .2vmax 55px;
     font-size: 2vmax;
-    background: #eaeaea;
+    background: #888;
+    color: #fff;
     margin-bottom: 2vmax;
+    border-radius: .25vmax;
 }
 
     #contents h1:before, #contents h1:after {
@@ -491,7 +498,7 @@ h2 {
 #contents h2 {
     padding: 20px 20px 0;
     background: #d9d9d5;
-    color: #fff;
+    color: #1d1313;
     text-align: center;
     font-weight: bold;
     font-size: 5vmax;
@@ -501,8 +508,8 @@ h2 {
     padding: 0.2em 0.5em;
     margin: 5vmax auto;
     opacity: 0.5;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000000;
+    /*    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;*/
     /* border-bottom: .5vmax solid #999; */
 }
 
@@ -600,6 +607,7 @@ h2 {
     .gallery_block a img:hover {
         opacity: 0.5;
         transition: 0.3s;
+        transform: scale(0.9, 0.9);
     }
 
 .works img {
@@ -612,17 +620,36 @@ h2 {
 
     #section5 h1 {
         margin-top: 5vmax;
+        font-weight: revert;
     }
 
 
 .demoLink {
+    color: #fff;
     font-size: 1.5em;
     margin: 5vmax 0vmax;
+    border: 1px solid #1B85FB;
+    border-radius: 1vmax;
+    padding: 1vmax;
+    background: #42b4c5;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    box-shadow: 0 .5vmax 2.5vmax 0 rgba(0, 0, 0, .2);
+}
+
+
+    .demoLink:hover {
+        transform: scale(0.9,0.9);
+        color: #fff;
+        border: 1px solid #1B85FB;
+        background-color: #3c6087;
+        box-shadow: 0 .5vmax 2.5vmax 0 rgba(0, 0, 0, .1);
+    }
+
     
-}
-.demoImg img{
-    max-height: 800px;
-}
+    .demoImg img {
+        max-height: 800px;
+    }
 
 /*ビューワー設定*/
 .optionBox {
@@ -995,6 +1022,7 @@ footer {
         /* max-width: 100%; */
         height: auto;
         vertical-align: middle;
+        opacity:.9;
     }
 
 
@@ -1004,10 +1032,11 @@ footer {
         }*/
 
 
-.mail img:hover {
-    opacity: .5;
-    transition: all .3s ease;
-}
+        .mail img:hover {
+            opacity: .5;
+            transition: all .3s ease;
+            transform: scale(0.9, 0.9);
+        }
 
 #section4 article {
     display: flex;
