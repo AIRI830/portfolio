@@ -10,8 +10,10 @@
     color: #ffffff;
     font-family: "Roboto Slab", serif;
     font-size: 1.5em;
-    text-shadow: 1px 1px 0 #999, -1px -1px 0 #cbc9c5, -1px 1px 0 #8f8e84, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0 -1px 0 #545454, -1px 0 0 #FFF, 1px 0 0 #FFF;
+    /*text-shadow: 1px 1px 0 #999, -1px -1px 0 #cbc9c5, -1px 1px 0 #8f8e84, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0 -1px 0 #545454, -1px 0 0 #FFF, 1px 0 0 #FFF;*/
+    text-shadow: 1px 1px 0 #ebd183, -1px -1px 0 #c19c51, -1px 1px 0 #9d941e, 1px -1px 0 #ffd473, 0px 1px 0 #b59e26, 0 -1px 0 #d39435, -1px 0 0 #b9991f, 1px 0 0 #af9c18;
 }
+
 
 .dancing-script {
     font-family: "Dancing Script", cursive;
@@ -107,7 +109,8 @@ header {
     /*height: calc(60px + 20px);*/
     height: auto;
     text-align: center; /*内容を中央よせ*/
-    background: #e0dfd1;
+    /*background: #e0dfd1;*/
+    background-image: url(../images/paper.jpg);
 }
 
     header > section {
@@ -129,6 +132,11 @@ header {
         height: 2vmax;
         width: 2vmax;
         padding: .5vmax;
+    }
+
+    header a {
+         color: #331919;
+        
     }
 
 #logo {
@@ -469,8 +477,8 @@ h2 {
     display: inline-block;
     padding: .2vmax 55px;
     font-size: 2vmax;
-    background: #888;
-    color: #fff;
+    /* background: #888;*/
+    color: #4f4444;
     margin-bottom: 2vmax;
     border-radius: .25vmax;
 }
@@ -497,8 +505,8 @@ h2 {
 
 #contents h2 {
     padding: 20px 20px 0;
-    background: #d9d9d5;
-    color: #1d1313;
+    background: #bfb5b1;
+    color: #140404;
     text-align: center;
     font-weight: bold;
     font-size: 5vmax;
@@ -601,7 +609,7 @@ h2 {
         border: 1px solid #f1f1f1;
         /* border-radius: 50%; */
         /* object-fit: cover; */
-        border-radius: 4px;
+        border-radius: 2vmax;
     }
 
     .gallery_block a img:hover {
@@ -611,7 +619,7 @@ h2 {
     }
 
 .works img {
-    border-radius: initial;
+/*    border-radius: initial;*/
 }
 
 #section5 {
@@ -628,13 +636,13 @@ h2 {
     color: #fff;
     font-size: 1.5em;
     margin: 5vmax 0vmax;
-    border: 1px solid #1B85FB;
+    border: 1px solid #331919;
     border-radius: 1vmax;
     padding: 1vmax;
-    background: #42b4c5;
+    background: #4f4444;
     -webkit-transition: all .3s;
     transition: all .3s;
-    box-shadow: 0 .5vmax 2.5vmax 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 .5vmax 2.5vmax 0 rgba(0, 0, 0, .5);
 }
 
 
@@ -643,7 +651,7 @@ h2 {
         color: #fff;
         border: 1px solid #1B85FB;
         background-color: #3c6087;
-        box-shadow: 0 .5vmax 2.5vmax 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 .5vmax 2.5vmax 0 rgba(0, 0, 0, .2);
     }
 
     
@@ -891,11 +899,11 @@ footer {
     min-width: 80px;
     /* text-align: center; */
     /* padding-bottom: 1vmax; */
-    background: #888;
+    background: #4f4444;
     text-align: center !important;
     border-radius: .25vmax;
     color: #fff;
-    margin-bottom:1vmax;
+    margin-bottom: 1vmax;
 }
 
 
