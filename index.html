@@ -30,17 +30,17 @@
         <img class="loading__logo" src="./images/iris.svg" alt="VOOL">
     </div>
     <header id="section1">
-        <section class=""><div><img src="images/iris_white.svg"></div></section>
+        <section class="topIcon"><div><img src="images/iris_white.svg"></div></section>
         <h2 class="roboto-slab">AIRI'S PORTFOLIO</h2>
         <!--<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE SITE"></a></h1>-->
 
         <section class="naviMenu">
             <ul>
-                <li><a href="#section1" data-hover-text="トップ">Top</a></li>
-                <li><a href="#section2" data-hover-text="自己紹介">Profile</a></li>
-                <li><a href="#section5" data-hover-text="ギャラリー">Gallery</a></li>
-                <li><a href="#section3" data-hover-text="スキル">Skill</a></li>
-                <li><a href="#section4" data-hover-text="お問い合わせ">Contact</a></li>
+                <li class="topNav"><a href="#section1" data-hover-text="トップ"><span>Top</span></a></li>
+                <li class="profileNav"><a href="#section2" data-hover-text="自己紹介"><span>Profile</span></a></li>
+                <li class="skillNav"><a href="#section3" data-hover-text="スキル"><span>Skill</span></a></li>
+                <li class="galleryNav"><a href="#section5" data-hover-text="ギャラリー"><span>Gallery</span></a></l>
+                <li class="mailNav"><a href="#section4" data-hover-text="お問い合わせ"><span>Contact</span></a></li>
 
                 <!-- <li><a href="gallery.html" data-hover-text="ギャラリー">Gallery</a></li>-->
             </ul>
@@ -53,15 +53,17 @@
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
 
             <div class="menu-content">
+
                 <ul>
-                    <li><a href="#section1" data-hover-text="トップ">Top</a></li>
-                    <li><a href="#section2" data-hover-text="自己紹介">Profile</a></li>
-                    <li><a href="#section5" data-hover-text="ギャラリー">Gallery</a></li>
-                    <li><a href="#section3" data-hover-text="スキル">Skill</a></li>
-                    <li><a href="#section4" data-hover-text="お問い合わせ">Contact</a></li>
+                    <li class="topNav"><a href="#section1" data-hover-text="トップ"> <img src="images/top.png" alt=""><span>Top</span></a></li>
+                    <li class="profileNav"><a href="#section2" data-hover-text="自己紹介"> <img src="images/profile.png" alt=""><span>Profile</span></a></li>
+                    <li class="skillNav"><a href="#section3" data-hover-text="スキル"> <img src="images/skill.png" alt=""><span>Skill</span></a></li>
+                    <li class="galleryNav"><a href="#section5" data-hover-text="ギャラリー"> <img src="images/gallery.png" alt=""><span>Gallery</span></a></li>
+                    <li class="mailNav"><a href="#section4" data-hover-text="お問い合わせ"> <img src="images/mail.png" alt=""><span>Contact</span></a></li>
 
                     <!-- <li><a href="gallery.html" data-hover-text="ギャラリー">Gallery</a></li>-->
                 </ul>
+
             </div>
 
         </nav>
@@ -88,18 +90,18 @@
             <section id="section2">
 
 
-                <h2 class="dancing-script">Profile</h2>
+                <section class="cntTitle"><h2 class="dancing-script">Profile</h2></section>
 
-                <article class="profileSentence">
+                <article class="profileSentence cntBlock">
 
-                    <section class="profile">
+                    <section class="profile ">
                         <div class="pflimg"><img src="images/profile.jpg"></div>
                         <p class="name">AIRI</p>
                         <article class="about">
 
                             <span>北海道札幌市出身</span>
 
-                            <span class="skill">経歴</span><!--※タグ修正予定-->
+                            <h1 class="skill">経歴</h1><!--※タグ修正予定-->
                             <span>
                                 大学卒業後、コンテンツ制作会社にてHTML,CSSコーダー兼2Dグラフィッカーとして経験を積んだのち、医療IT系の企業に勤務し、自社製のWebアプリケーション開発に携わっておりました。
 
@@ -114,7 +116,7 @@
                                 前々職では、経費精算や小口現金管理、備品発注や来客・受電対応、清掃等を含む庶務、雑務等の一般事務職としての業務経験もございます。-->
                             </span>
 
-                            <span class="skill">趣味</span>
+                            <h1 class="skill">趣味</h1>
                             <span>イラスト作成、旅行、美術館巡り、喫茶店巡り、古民家・神社仏閣めぐり、舞台鑑賞、ぬい撮り</span>
                         </article>
                     </section>
@@ -127,45 +129,77 @@
             <section id="section3">
 
 
-                <h2 class="dancing-script">Skill</h2><!--※タグ修正予定-->
-
-                <article class="skillSentence">
-
-                    <section class="about2">
-                        <!--<span>職務経歴</span>-->
-                        <span class="skill">保有資格</span><!--※タグ修正予定-->
-                        <span>・2008/10 Word文書処理技能認定試験3級 合格</span>
-                        <span>・2011/2 文部科学省公認色彩検定3級 取得</span>
-                        <span>・2012/8 Illustratorクリエイター能力検定試験スタンダード 合格</span>
-                        <span>・2012/8 Photoshopクリエイター能力検定試験スタンダード 合格</span>
-                        <span>・2014/3 中学校教員免許 第二種 取得</span>
-                        <span>・2014/3 高等学校教員免許 第二種 取得</span>
-                        <span>・2020/4 ITパスポート試験 合格</span>
-                    </section>
-                    <section class="about3">
-                        <span class="skill">スキル</span><!--※タグ修正予定-->
-
-                        <span>・HTML</span>
-                        <span>・CSS</span>
-                        <span>・javascript</span>
-                        <span>・jQuery</span>
-                        <span>・VisualStudio</span>
-                        <span>・AdobeIllustrator</span>
-                        <span>・AdobePhotoshop</span>
-                        <span>・MicrosoftOfficeExcel</span>
-                        <span>・MicrosoftOfficeWord</span>
-                        <span>・MicrosoftOfficePowerPoint</span>
-                        <span>・Confluence</span>
-                        <span>・WordPress</span>
-
-                    </section>
-
-                </article>
+                <section class="cntTitle">
+                  <h2 class="dancing-script">Skill</h2><!--※タグ修正予定-->
+                </section>
 
 
+                    <article class="skillSentence cntBlock">
 
-            </section>
-            <!--<section id="section3">
+                        <section class="about2 ">
+                            <!--<span>職務経歴</span>-->
+                            <h1 class="skill">保有資格</h1><!--※タグ修正予定-->
+                            <article class="qualification">
+                                <span>・2008/10 Word文書処理技能認定試験3級 合格</span>
+                                <span>・2011/2 文部科学省公認色彩検定3級 取得</span>
+                                <span>・2012/8 Illustratorクリエイター能力検定試験スタンダード 合格</span>
+                                <span>・2012/8 Photoshopクリエイター能力検定試験スタンダード 合格</span>
+                                <span>・2014/3 中学校教員免許 第二種 取得</span>
+                                <span>・2014/3 高等学校教員免許 第二種 取得</span>
+                                <span>・2020/4 ITパスポート試験 合格</span>
+                            </article>
+                        </section>
+                        <section class="about3">
+                            <h1 class="skill">スキル</h1><!--※タグ修正予定-->
+                            <article class="skillBlock">
+                                <div><img src="images/skillIcon/icons8-html-96.png"><span>HTML</span></div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-css-96.png"><span>CSS</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-javascript-96.png"><span>javascript</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png"><span>jQuery</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-visual-studio-96.png"><span>VisualStudio</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-adobe-illustrator-96.png"><span>Adobe<br />Illustrator</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-adobe-photoshop-96.png"><span>Adobe<br />Photoshop</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-excel-96.png"><span>Microsoft<br />Office<br />Excel</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-word-96.png"><span>Microsoft<br />Office<br />Word</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-powerpoint-96.png"><span>Microsoft<br />Office<br />PowerPoint</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-confluence-96.png"><span>Confluence</span>
+                                </div>
+                                <div>
+                                    <img src="images/skillIcon/icons8-wordpress-96.png"><span>WordPress</span>
+                                </div>
+                             </article>
+
+
+
+
+
+                        </section>
+
+                    </article>
+
+
+
+                </section>
+                <!--<section id="section3">
 
 
         <h2 class="dancing-script">Skill</h2>
@@ -178,236 +212,250 @@
 
 
     </section>-->
-            <section id="section5">
-                <h2 class="dancing-script">Gallery</h2>
-                <h1>Photo</h1>
-                <section class="gallery_block">
-
-                    <div>
-
-                        <div>
-                            <a href="./images/beach2.jpg" data-lightbox="album" data-title=""><img src="./images/beach2.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/cat2.jpg" data-lightbox="album" data-title=""><img src="./images/cat2.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/minamo.jpg" data-lightbox="album" data-title=""><img src="./images/minamo.jpg"></a>
-                        </div>
-                        <!--<div>
-                <a href="./images/yokohama.JPG" data-lightbox="album" data-title=""><img src="./images/yokohama.JPG"></a>
-            </div>-->
-                        <div>
-                            <a href="./images/rose.jpg" data-lightbox="album" data-title=""><img src="./images/rose.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/pengin.JPG" data-lightbox="album" data-title=""><img src="./images/pengin.JPG"></a>
-                        </div>
-                        <div>
-                            <a href="./images/tutuji.JPG" data-lightbox="album" data-title=""><img src="./images/tutuji.JPG"></a>
-                        </div>
-                        <div>
-                            <a href="./images/elephant.jpg" data-lightbox="album" data-title=""><img src="./images/elephant.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/kai.jpg" data-lightbox="album" data-title=""><img src="./images/kai.jpg"></a>
-                        </div>
-                    </div>
-
-                </section>
-
-
-                <h1>Illustration</h1>
-                <section class="gallery_block">
-
-                    <div>
-                        <div>
-                            <a href="./images/yusai.jpg" data-lightbox="album" data-title=""><img src="./images/yusai.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/nike.jpg" data-lightbox="album" data-title=""><img src="./images/nike.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/trees.jpg" data-lightbox="album" data-title=""><img src="./images/trees.jpg"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/flamingo.jpg" data-lightbox="album" data-title=""><img src="./images/flamingo.jpg"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/eye1.jpg" data-lightbox="album" data-title=""><img src="./images/eye1.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/eye2.jpg" data-lightbox="album" data-title=""><img src="./images/eye2.jpg"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/swan.jpg" data-lightbox="album" data-title=""><img src="./images/swan.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/london.jpg" data-lightbox="album" data-title=""><img src="./images/london.jpg"></a>
-                        </div>
-
-
-
-                    </div>
-                </section>
-
-                <h1>Work</h1>
-                <section class="gallery_block">
-
-                    <div class="works">
-
-
-
-
-
-
-
-
-                        <div>
-                            <a href="./images/withyou_image.jpg" data-lightbox="album" data-title="訪問歯科診療Web予約システム画像（アイコンイラスト、ボタン等イラスト、コーディング）"><img src="./images/withyou_image.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/RIS_UI2.png" data-lightbox="album" data-title="放射線科WebシステムTOP画面(UIデザイン＆コーディング)"><img src="./images/RIS_UI2.png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/mediotech (3).png" data-lightbox="album" data-title="検査予約WEBシステム画面(コーディング＆ロゴデザイン)"><img src="./images/mediotech (3).png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/mediotech (15).png" data-lightbox="album" data-title="電子健康手帳（画面案＆ロゴ案＆コーディング）"><img src="./images/mediotech (15).png"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/mediotech (4).png" data-lightbox="album" data-title="サイトTOPイラスト（アイコンイラスト＆コーディング）"><img src="./images/mediotech (4).png"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/mediotech (11).png" data-lightbox="album" data-title="サイトシステム紹介ページ（アイコンイラスト＆コーディング）"><img src="./images/mediotech (11).png"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/clipton_data3.jpg" data-lightbox="album" data-title="Webアプリケーションゲーム画像（アイコンイラスト）"><img src="./images/clipton_data3.jpg"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/mediotech (1).png" data-lightbox="album" data-title="放射線科WEBシステム内画像（アイコンイラスト＆ボタン等イラスト）"><img src="./images/mediotech (1).png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/mediotech (2).png" data-lightbox="album" data-title="放射線科WEBシステム内画像（アイコンイラスト＆ボタン等イラスト）"><img src="./images/mediotech (2).png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/mediotech (17).png" data-lightbox="album" data-title="検査予約システムシステム紹介ページ（アイコンイラスト＆コーディング）"><img src="./images/mediotech (17).png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/mediotech (6).png" data-lightbox="album" data-title="地域包括ICTシステム（アイコンイラスト）"><img src="./images/mediotech (6).png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/mediotech (7).png" data-lightbox="album" data-title="地域包括ICTシステム（アイコンイラスト）"><img src="./images/mediotech (7).png"></a>
-                        </div>
-
-
-
-                        <div>
-                            <a href="./images/pict2.jpg" data-lightbox="album" data-title="要介護度指標ピクトグラム"><img src="./images/pict2.jpg"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/mediotech (16).png" data-lightbox="album" data-title="電子健康手帳（アイコンイラスト）"><img src="./images/mediotech (16).png"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/mediotech (13).png" data-lightbox="album" data-title="地域包括ICTシステム紹介冊子（アイコンイラスト）"><img src="./images/mediotech (13).png"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/mealbarance.png" data-lightbox="album" data-title="食事バランス開設図"><img src="./images/mealbarance.png"></a>
-                        </div>
-
-
-
-                        <div>
-                            <a href="./images/mediotech (12).png" data-lightbox="album" data-title="医療用人体図"><img src="./images/mediotech (12).png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/mediotech (14).png" data-lightbox="album" data-title="歯磨き・歯周病解説図"><img src="./images/mediotech (14).png"></a>
-                        </div>
-                        <div>
-                            <a href="./images/withYou_logo.png" data-lightbox="album" data-title="訪問歯科Web予約システムロゴ案画像"><img src="./images/withYou_logo.png"></a>
-                        </div>
-
-
-
-                        <div>
-                            <a href="./images/kamome.jpg" data-lightbox="album" data-title="有限会社戸叶運輸企業ロゴ"><img src="./images/kamome.jpg"></a>
-                        </div>
-
-
-
-                        <div>
-                            <a href="./images/2016newyear.jpg" data-lightbox="album" data-title="LP掲載用期間限定年賀画像"><img src="./images/2016newyear.jpg"></a>
-                        </div>
-                        <div>
-                            <a href="./images/newyear2.png" data-lightbox="album" data-title="LP掲載用期間限定年賀画像2"><img src="./images/newyear2.png"></a>
-                        </div>
-
-                        <div>
-                            <a href="./images/wing.JPG" data-lightbox="album" data-title="某フォトスタジオ撮影用背景"><img src="./images/wing.JPG"></a>
-                        </div>
-                    </div>
-                </section>
-
-                <h1>Demo</h1>
-                <section class="gallery_block">
-
-                    <div>
-                        <section>
-                            <div class="demoImg">
-                                <a href="./images/wordpress.png" data-lightbox="album" data-title="Wordpressデモサイト"><img src="./images/wordpress.png"></a>
-
-                            </div>
+                <section id="section5">
+                    <section class="cntTitle">
+                        <h2 class="dancing-script">Gallery</h2>
+                    </section>
+                    <article class="cntBlock">
+                        <h1>Photo</h1>
+                        <section class="gallery_block">
 
                             <div>
-                                <a href="http://atikrni830.starfree.jp/">
-                                    <div class="demoLink">デモサイト(外部サイト)へ移動</div>
-                                </a>
+
+                                <div>
+                                    <a href="./images/beach2.jpg" data-lightbox="album" data-title=""><img src="./images/beach2.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/cat2.jpg" data-lightbox="album" data-title=""><img src="./images/cat2.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/minamo.jpg" data-lightbox="album" data-title=""><img src="./images/minamo.jpg"></a>
+                                </div>
+                                <!--<div>
+                <a href="./images/yokohama.JPG" data-lightbox="album" data-title=""><img src="./images/yokohama.JPG"></a>
+            </div>-->
+                                <div>
+                                    <a href="./images/rose.jpg" data-lightbox="album" data-title=""><img src="./images/rose.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/pengin.JPG" data-lightbox="album" data-title=""><img src="./images/pengin.JPG"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/tutuji.JPG" data-lightbox="album" data-title=""><img src="./images/tutuji.JPG"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/elephant.jpg" data-lightbox="album" data-title=""><img src="./images/elephant.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/kai.jpg" data-lightbox="album" data-title=""><img src="./images/kai.jpg"></a>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                        <h1>Illustration</h1>
+                        <section class="gallery_block">
+
+                            <div>
+                                <div>
+                                    <a href="./images/yusai.jpg" data-lightbox="album" data-title=""><img src="./images/yusai.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/nike.jpg" data-lightbox="album" data-title=""><img src="./images/nike.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/trees.jpg" data-lightbox="album" data-title=""><img src="./images/trees.jpg"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/flamingo.jpg" data-lightbox="album" data-title=""><img src="./images/flamingo.jpg"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/eye1.jpg" data-lightbox="album" data-title=""><img src="./images/eye1.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/eye2.jpg" data-lightbox="album" data-title=""><img src="./images/eye2.jpg"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/swan.jpg" data-lightbox="album" data-title=""><img src="./images/swan.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/london.jpg" data-lightbox="album" data-title=""><img src="./images/london.jpg"></a>
+                                </div>
+
+
+
                             </div>
                         </section>
 
-                    </div>
+                        <h1>Work</h1>
+                        <section class="gallery_block">
+
+                            <div class="works">
+
+
+
+
+
+
+
+
+                                <div>
+                                    <a href="./images/withyou_image.jpg" data-lightbox="album" data-title="訪問歯科診療Web予約システム画像（アイコンイラスト、ボタン等イラスト、コーディング）"><img src="./images/withyou_image.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/RIS_UI2.png" data-lightbox="album" data-title="放射線科WebシステムTOP画面(UIデザイン＆コーディング)"><img src="./images/RIS_UI2.png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/mediotech (3).png" data-lightbox="album" data-title="検査予約WEBシステム画面(コーディング＆ロゴデザイン)"><img src="./images/mediotech (3).png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/mediotech (15).png" data-lightbox="album" data-title="電子健康手帳（画面案＆ロゴ案＆コーディング）"><img src="./images/mediotech (15).png"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/mediotech (4).png" data-lightbox="album" data-title="サイトTOPイラスト（アイコンイラスト＆コーディング）"><img src="./images/mediotech (4).png"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/mediotech (11).png" data-lightbox="album" data-title="サイトシステム紹介ページ（アイコンイラスト＆コーディング）"><img src="./images/mediotech (11).png"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/clipton_data3.jpg" data-lightbox="album" data-title="Webアプリケーションゲーム画像（アイコンイラスト）"><img src="./images/clipton_data3.jpg"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/mediotech (1).png" data-lightbox="album" data-title="放射線科WEBシステム内画像（アイコンイラスト＆ボタン等イラスト）"><img src="./images/mediotech (1).png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/mediotech (2).png" data-lightbox="album" data-title="放射線科WEBシステム内画像（アイコンイラスト＆ボタン等イラスト）"><img src="./images/mediotech (2).png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/mediotech (17).png" data-lightbox="album" data-title="検査予約システムシステム紹介ページ（アイコンイラスト＆コーディング）"><img src="./images/mediotech (17).png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/mediotech (6).png" data-lightbox="album" data-title="地域包括ICTシステム（アイコンイラスト）"><img src="./images/mediotech (6).png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/mediotech (7).png" data-lightbox="album" data-title="地域包括ICTシステム（アイコンイラスト）"><img src="./images/mediotech (7).png"></a>
+                                </div>
+
+
+
+                                <div>
+                                    <a href="./images/pict2.jpg" data-lightbox="album" data-title="要介護度指標ピクトグラム"><img src="./images/pict2.jpg"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/mediotech (16).png" data-lightbox="album" data-title="電子健康手帳（アイコンイラスト）"><img src="./images/mediotech (16).png"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/mediotech (13).png" data-lightbox="album" data-title="地域包括ICTシステム紹介冊子（アイコンイラスト）"><img src="./images/mediotech (13).png"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/mealbarance.png" data-lightbox="album" data-title="食事バランス開設図"><img src="./images/mealbarance.png"></a>
+                                </div>
+
+
+
+                                <div>
+                                    <a href="./images/mediotech (12).png" data-lightbox="album" data-title="医療用人体図"><img src="./images/mediotech (12).png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/mediotech (14).png" data-lightbox="album" data-title="歯磨き・歯周病解説図"><img src="./images/mediotech (14).png"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/withYou_logo.png" data-lightbox="album" data-title="訪問歯科Web予約システムロゴ案画像"><img src="./images/withYou_logo.png"></a>
+                                </div>
+
+
+
+                                <div>
+                                    <a href="./images/kamome.jpg" data-lightbox="album" data-title="有限会社戸叶運輸企業ロゴ"><img src="./images/kamome.jpg"></a>
+                                </div>
+
+
+
+                                <div>
+                                    <a href="./images/2016newyear.jpg" data-lightbox="album" data-title="LP掲載用期間限定年賀画像"><img src="./images/2016newyear.jpg"></a>
+                                </div>
+                                <div>
+                                    <a href="./images/newyear2.png" data-lightbox="album" data-title="LP掲載用期間限定年賀画像2"><img src="./images/newyear2.png"></a>
+                                </div>
+
+                                <div>
+                                    <a href="./images/wing.JPG" data-lightbox="album" data-title="某フォトスタジオ撮影用背景"><img src="./images/wing.JPG"></a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <h1>Demo</h1>
+                        <section class="gallery_block">
+
+                            <div>
+                                <section>
+                                    <div class="demoImg">
+                                        <a href="./images/wordpress.png" data-lightbox="album" data-title="Wordpressデモサイト"><img src="./images/wordpress.png"></a>
+
+                                    </div>
+
+                                    <div>
+                                        <a href="http://atikrni830.starfree.jp/">
+                                            <div class="demoLink">デモサイト(外部サイト)へ移動</div>
+                                        </a>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </section>
+
+
+                    </article>
+
+                    </section>
+
+
+
+                <section id="section4">
+
+                     <section class="cntTitle"><h2 class="dancing-script">Contact</h2></section>
+
+                    <article class="cntBlock">
+
+                        <div class="mail">
+                            <a href="" class="mail-contact"><img src="images/mail2.svg"><p>お問い合わせはこちら</p></a>
+                        </div>
+                        <!--<p>お問い合わせはこちら</p>-->
+                    </article>
+
                 </section>
 
 
 
-
-            </section>
-
-
-
-            <section id="section4">
-
-                <h2 class="dancing-script">Contact</h2>
-
-                <article>
-
-                    <div class="mail">
-                        <a href="" class="mail-contact"><img src="images/mail.svg"><p>お問い合わせはこちら</p></a>
-                    </div>
-                    <!--<p>お問い合わせはこちら</p>-->
-                </article>
-
-            </section>
-
-
-
-        </div>
+</div>
         <!--/contents-->
 
 
 
         <p id="page-top"><a href="#"><img src="images/arrow_top.svg"></a></p>
         <footer>
+            <section class="naviMenu">
+                <ul>
+                    <li class="topNav"><a href="#section1" data-hover-text="トップ"><span>Top</span></a></li>
+                    <li class="profileNav"><a href="#section2" data-hover-text="自己紹介"><span>Profile</span></a></li>
+                    <li class="skillNav"><a href="#section3" data-hover-text="スキル"><span>Skill</span></a></li>
+                    <li class="galleryNav"><a href="#section5" data-hover-text="ギャラリー"><span>Gallery</span></a></li>
+                    <li class="mailNav"><a href="#section4" data-hover-text="お問い合わせ"><span>Contact</span></a></li>
+
+                    <!-- <li><a href="gallery.html" data-hover-text="ギャラリー">Gallery</a></li>-->
+                </ul>
+            </section>
             <small>Copyright&copy; <a href="index.html">AIRI'S PORTFOLIO</a> All Rights Reserved.</small>
         </footer>
 
