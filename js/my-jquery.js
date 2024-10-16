@@ -53,14 +53,14 @@ $(window).scroll(function () {
 });
 
 $(window).scroll(function () {
-    $('.about2').each(function () {
+    $('.qualification').each(function () {
         var hit = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var wHeight = $(window).height();
         var customTop = 10;
-        if (typeof $(this).data('about2') !== 'undefined') {
+        if (typeof $(this).data('.qualification') !== 'undefined') {
             // data-effect="îCà”ÇÃíl" Ç™ê›íËÇ≥ÇÍÇƒÇ¢ÇÈèÍçá
-            customTop = $(this).data('about2');
+            customTop = $(this).data('.qualification');
         }
         if (hit + customTop < wHeight + scroll) {
             $(this).addClass("catch_copy2");
@@ -69,14 +69,14 @@ $(window).scroll(function () {
 });
 
 $(window).scroll(function () {
-    $('.about3').each(function () {
+    $('.skillBlock').each(function () {
         var hit = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var wHeight = $(window).height();
         var customTop = 10;
-        if (typeof $(this).data('about3') !== 'undefined') {
+        if (typeof $(this).data('.skillBlock') !== 'undefined') {
             // data-effect="îCà”ÇÃíl" Ç™ê›íËÇ≥ÇÍÇƒÇ¢ÇÈèÍçá
-            customTop = $(this).data('about3');
+            customTop = $(this).data('.skillBlock');
         }
         if (hit + customTop < wHeight + scroll) {
             $(this).addClass("catch_copy3");
